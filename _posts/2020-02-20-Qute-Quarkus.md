@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Qute Quarkus
+tags: quarkus,qute
 ---
 # 2020-02-20 Quarkus, Qute and Bootstrap
 I was never really into web UI, I have zero javascript knowledge and I'm kind of proud of that :-)
