@@ -1,10 +1,10 @@
 ---
 layout: post
+date: 2020-02-20
 title: Qute Quarkus
-tags: [quarkus,qute]
 desc: Some impressions using Quarkus and Qute
 ---
-# 2020-02-20 Quarkus, Qute and Bootstrap
+# Quarkus, Qute and Bootstrap
 I was never really into web UI, I have zero javascript knowledge and I'm kind of proud of that :-)
 But at some point it is helpful if one can just create a simple little web gui and when I read about Quarkus and Qute I wanted to give it a try. Here are my impressions
 
