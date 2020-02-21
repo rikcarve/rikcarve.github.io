@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Qute Quarkus
-tags: quarkus,qute
+tags: {quarkus,qute}
 desc: Some impressions using Quarkus and Qute
 ---
 # 2020-02-20 Quarkus, Qute and Bootstrap
