@@ -32,3 +32,7 @@ theme: jekyll-theme-hacker
 plugins:
   - jekyll-feed
   - jekyll-paginate
+
+footer-links:
+  github: rikcarve
+  twitter: rikcarve
