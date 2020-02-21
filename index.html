@@ -16,11 +16,6 @@ layout: default
   <p class="author">
     <span class="date">{{ post.date }}</span>
   </p>
-  <p>Tags:</p><ul> 
-    {% for tag in post.tags %}
-        <li>{{ tag }}</li>
-    {% endfor %}
-  </ul>
   <div class="content">
     {{ post.desc }}
   </div>
