@@ -28,24 +28,24 @@ The code above implies you have an HTML template called light.html:
 {#include header.html}{/include}
 <html>
 <body>
-    {#include navigation.html}{/include}
+	{#include navigation.html}{/include}
 	<table class="table table-striped table-bordered">
-	    <thead>
-	        <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Status</th>
-            </tr>
-        </thead>
-        <tbody>
-	    	{#for item in light}
-				<tr>
-					<td>{item.name}</td>
-					<td class="fit">
-                    	<form action="/light/{item.name}/toggle" method="POST" name="toggle-{item.name}" up-target=".container">
-                        	<input class="btn btn-dark btn-sm" value="{item.status}" type="submit">
-                    	</form>
-            		</td>
-	    		</tr>
+		<thead>
+			<tr>
+				<th scope="col">Name</th>
+				<th scope="col">Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			{#for item in light}
+			<tr>
+				<td>{item.name}</td>
+				<td class="fit">
+					<form action="/light/{item.name}/toggle" method="POST" name="toggle-{item.name}" up-target=".container">
+						<input class="btn btn-dark btn-sm" value="{item.status}" type="submit">
+					</form>
+				</td>
+			</tr>
 			{/for}
 		</tbody>
 	</table>
@@ -79,4 +79,5 @@ And the corresponding rax-rs endpoint (triggering a redirect for reload):
 The full example (including navigation and a second page) can be found [here!](https://github.com/rikcarve/quarkus).
 
 Conclusion: Exactly what I was looking for: no javascript, no npm, just plain Java/JakartaEE with just as much HTML as needed :-)
+
 ![screenshot](https://rikcarve.github.io/images/screenshot.jpg){:height="25%" width="25%"}
