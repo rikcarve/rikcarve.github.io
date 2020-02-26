@@ -79,3 +79,4 @@ And the corresponding rax-rs endpoint (triggering a redirect for reload):
 The full example (including navigation and a second page) can be found [here!](https://github.com/rikcarve/quarkus).
 
 Conclusion: Exactly what I was looking for: no javascript, no npm, just plain Java/JakartaEE with just as much HTML as needed :-)
+![screenshot](../images/screenshot.jpg){:height="50%" width="50%"}
