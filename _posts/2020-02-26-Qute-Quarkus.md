@@ -37,16 +37,16 @@ The code above implies you have an HTML template called light.html:
             </tr>
         </thead>
         <tbody>
-		{#for item in light}
-		<tr>
-			<td>{item.name}</td>
-			<td class="fit">
-                <form action="/light/{item.name}/toggle" method="POST" name="toggle-{item.name}" up-target=".container">
-                    <input class="btn btn-dark btn-sm" value="{item.status}" type="submit">
-                </form>
-            </td>
-		</tr>
-		{/for}
+	    	{#for item in light}
+				<tr>
+					<td>{item.name}</td>
+					<td class="fit">
+                    	<form action="/light/{item.name}/toggle" method="POST" name="toggle-{item.name}" up-target=".container">
+                        	<input class="btn btn-dark btn-sm" value="{item.status}" type="submit">
+                    	</form>
+            		</td>
+	    		</tr>
+			{/for}
 		</tbody>
 	</table>
 </body>
@@ -79,4 +79,4 @@ And the corresponding rax-rs endpoint (triggering a redirect for reload):
 The full example (including navigation and a second page) can be found [here!](https://github.com/rikcarve/quarkus).
 
 Conclusion: Exactly what I was looking for: no javascript, no npm, just plain Java/JakartaEE with just as much HTML as needed :-)
-![screenshot](../images/screenshot.jpg){:height="50%" width="50%"}
+![screenshot](https://rikcarve.github.io/images/screenshot.jpg){:height="50%" width="50%"}
