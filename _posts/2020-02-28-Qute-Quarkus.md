@@ -79,6 +79,7 @@ And the corresponding rax-rs endpoint (triggering a redirect for reload):
 The full example (including navigation and a second page) can be found [here!](https://github.com/rikcarve/quarkus).
 
 Once I got used to html and bootstrap things were really easy. At some point it reminds me of JSP, but this is not bad, it's more a sign that it's really stright forward. I havn't used the 'inject' feature yet, but you can inject any @Named annotated CDI bean in your html template.
+
 Conclusion: Exactly what I was looking for: no javascript, no npm, just plain Java/JakartaEE with just as much HTML as needed :-)
 
 ![screenshot](https://rikcarve.github.io/images/screenshot.jpg){:height="50%" width="50%"}
