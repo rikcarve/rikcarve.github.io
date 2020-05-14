@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2020-05-15
+date: 2020-05-14
 title: Quarkus Security
 desc: How to secure your Quarkus app
 ---
@@ -14,7 +14,7 @@ Of course, I don't want to make that accessible from outside my WLAN ;-) So here
 to control and monitor the most important parts of my home-automation. And it should be more secure than the original :-P
 
 Based on Quarkus and Qute I wrote this little webapp, but then the hard part came: security. I'm a backend developer and
-architect and whenever it comes to the security topic I quickly put the invisibility cloak around me ;-) But here I am
+architect and whenever it comes to security I quickly put the invisibility cloak around me ;-) But here I am
 and nobody else can do it for me.
 
 ### Code
@@ -48,7 +48,7 @@ Hash your password to put it in the users.properties file:
 ```bash
 echo -n Foo:MyRealm:s3cr3t | md5sum
 ```
-Yes, I'm aware of the fact storing passwords (even hashed) in a file is maybe not the way to go. But hey, I'm not dealing
+Yes, I'm aware of the fact that storing passwords (even hashed) in a file is maybe not the way to go. But hey, I'm not dealing
 with credit cards here, just some light switches :-P
 
 ### Login
@@ -58,9 +58,9 @@ quarkus.http.auth.basic=true
 ```
 
 ### HTTPS
-No sense using authentication without securing the transport layer, so I had to switch to HTTPS. And that means certificates
+There's no sense using authentication without securing the transport layer, so I had to switch to HTTPS. And that means certificates
 and I hate certificates ;-) But as I own a Synology NAS (which is reachable through a dynamic DNS provider), getting a certificate
-from Let's encrypt is just a few clicks away. Once there, I could export them. But then I was left with 3 .pem files which
+from Let's encrypt is just a few clicks away. Once there, I could export them. Then I was left with 3 .pem files which
 look like a chinese newspaper to me :-(
 All I knew was, I need to get them in a Java keystore. My only option: [KeyStore Explorer](https://keystore-explorer.org/):
 * create a new keystore (JKS)
