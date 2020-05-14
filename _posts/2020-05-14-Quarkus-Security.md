@@ -52,7 +52,7 @@ Yes, I'm aware of the fact that storing passwords (even hashed) in a file is may
 with credit cards here, just some light switches :-P
 
 ### Login
-A well, I should use form-based authentication, but I was too lazy, so I just added basic auth:
+Ah well, I should use form-based authentication, but I was too lazy, so I just added basic auth:
 ```properties
 quarkus.http.auth.basic=true
 ```
